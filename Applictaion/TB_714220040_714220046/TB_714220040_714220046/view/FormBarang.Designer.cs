@@ -66,6 +66,8 @@
             this.dgBarang.TabIndex = 0;
             this.dgBarang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBarang_CellClick);
             this.dgBarang.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgBarang_CellFormatting);
+            this.dgBarang.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgBarang_ColumnHeaderMouseClick);
+            this.dgBarang.ColumnHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgBarang_ColumnHeaderMouseDoubleClick);
             // 
             // gbSearch
             // 
@@ -118,6 +120,7 @@
             this.btnHapus.TabIndex = 3;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnUbah
             // 
@@ -128,6 +131,7 @@
             this.btnUbah.TabIndex = 2;
             this.btnUbah.Text = "Ubah";
             this.btnUbah.UseVisualStyleBackColor = true;
+            this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
             // btnSimpan
             // 
@@ -138,6 +142,7 @@
             this.btnSimpan.TabIndex = 0;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnRefresh
             // 
@@ -150,6 +155,7 @@
             this.btnRefresh.Size = new System.Drawing.Size(35, 35);
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // gbInput
             // 
@@ -169,7 +175,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.DarkGray;
-            this.label4.Location = new System.Drawing.Point(105, 104);
+            this.label4.Location = new System.Drawing.Point(105, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 16);
             this.label4.TabIndex = 3;
@@ -179,9 +185,9 @@
             // tbHargaBarang
             // 
             this.tbHargaBarang.BackColor = System.Drawing.Color.White;
-            this.tbHargaBarang.Location = new System.Drawing.Point(108, 126);
+            this.tbHargaBarang.Location = new System.Drawing.Point(132, 126);
             this.tbHargaBarang.Name = "tbHargaBarang";
-            this.tbHargaBarang.Size = new System.Drawing.Size(447, 22);
+            this.tbHargaBarang.Size = new System.Drawing.Size(423, 22);
             this.tbHargaBarang.TabIndex = 4;
             // 
             // label3

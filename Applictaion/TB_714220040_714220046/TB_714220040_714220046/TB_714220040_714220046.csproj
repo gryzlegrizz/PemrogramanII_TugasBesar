@@ -101,6 +101,7 @@
     <Compile Include="controller\Barang.cs" />
     <Compile Include="controller\CekLogin.cs" />
     <Compile Include="controller\Koneksi.cs" />
+    <Compile Include="model\M_barang.cs" />
     <Compile Include="view\FormBarang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,8 +163,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
